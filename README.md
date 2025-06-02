@@ -1,4 +1,4 @@
-# CH-SVV: A Benchmark for Multi-Type Chinese Harmful Short Video Detection
+# CH-SV: A Benchmark for Multi-Type Chinese Harmful Short Video Detection
 Core code, preview samples, and supplementary materials for the CH-SV dataset.
 ## 📁 Project Structure
 
@@ -28,5 +28,27 @@ We provide access to the **full test set videos** via Quark Cloud:
 
 - 🔗 Download link: [https://pan.quark.cn/s/c5d2fa2cfad2](https://pan.quark.cn/s/c5d2fa2cfad2)  
 - 🔐 Access code: `Zjmu`
+
+### ⚖️ Ethical Considerations and Privacy
+
+We are fully aware of the potential sensitivities surrounding harmful content. All videos included in the CH-SV dataset were publicly available on the internet at the time of collection. To mitigate privacy risks:
+
+- No personally identifiable information (PII) was deliberately collected or included.
+- Content was selected and annotated solely for academic research purposes.
+- Annotation was conducted by trained annotators following detailed ethical guidelines.
+
+The dataset is intended **only for non-commercial research** on harmful content detection and should not be used for profiling or other misuse scenarios. Users must ensure responsible use and compliance with local regulations when using the dataset.
+
+### 📄 Licensing and Access
+
+- The **code** in this repository is released under the [MIT License](./LICENSE).
+- The **test dataset** and **supplementary materials** (including videos and keyword files) are released under the  
+  [Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License (CC BY-NC-ND 4.0)](https://creativecommons.org/licenses/by-nc-nd/4.0/).
+Summary of Terms:
+- ✅ Free to share (with attribution)
+- ❌ No commercial use
+- ❌ No modifications or derivative works
+If you wish to use the dataset in your research or publication, **please contact us in advance** to ensure appropriate use and to receive citation information once the paper is published.
+
 
 
