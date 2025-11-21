@@ -13,15 +13,15 @@ class MULTModel(nn.Module):
         super(MULTModel, self).__init__()
         self.orig_d_l, self.orig_d_a, self.orig_d_v, self.orig_d_f = orig_d_l, orig_d_a, orig_d_v, orig_d_f
         self.d_l, self.d_a, self.d_v, self.d_f = MULT_d, MULT_d, MULT_d, MULT_d
-        self.num_heads = 8
-        self.layers = 6
+        self.num_heads = 2
+        self.layers = 5
         self.attn_dropout = 0.1
         self.attn_dropout_a = 0.1
         self.attn_dropout_v = 0.1
         self.attn_dropout_f = 0.1
         self.relu_dropout = 0.1
         self.res_dropout = 0.1
-        self.out_dropout = 0.1
+        self.out_dropout = 0.0
         self.embed_dropout = 0.25
         self.attn_mask = True
 
@@ -72,8 +72,8 @@ class MULTModel(nn.Module):
         """
         text, audio, and vision should have dimension [batch_size, seq_len, n_features]
         """
-        #x_l = F.dropout(x_l.transpose(1, 2), p=self.embed_dropout, training=self.training)
-        x_l = x_l.transpose(1, 2)  # [batch_size, n_features, seq_len]
+        x_l = F.dropout(x_l.transpose(1, 2), p=self.embed_dropout, training=self.training)
+        #x_l = x_l.transpose(1, 2)  # [batch_size, n_features, seq_len]
         x_a = x_a.transpose(1, 2)
         x_v = x_v.transpose(1, 2)
         x_f = x_f.transpose(1, 2)

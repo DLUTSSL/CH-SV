@@ -18,9 +18,9 @@ from utils.metrics import *
 from src.CrossmodalTransformer import MULTModel
 from src.StoG_different_modal import CapsuleSequenceToGraph
 
-class AudioVideoTeacherModel(nn.Module):
+class HaveModel(nn.Module):
     def __init__(self, bert_model, fea_dim, dropout):
-        super(AudioVideoTeacherModel, self).__init__()
+        super(HaveModel, self).__init__()
 
         self.video_dim = 4096
         self.img_dim = 4096

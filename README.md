@@ -29,6 +29,14 @@ We provide access to the **full test set videos** via Quark Cloud:
 - 🔗 Download link: [https://pan.quark.cn/s/c5d2fa2cfad2](https://pan.quark.cn/s/c5d2fa2cfad2)  
 - 🔐 Access code: `Zjmu`
 
+### 📊 Dataset and Features Availability
+
+We are pleased to announce that the **original video data** and **extracted features** of the CH-SV dataset are now publicly available. You can access them via Quark Cloud using the links below. 
+
+- **Extracted Features**  
+  - 🔗 Download link: [https://pan.quark.cn/s/d54351288504](https://pan.quark.cn/s/d54351288504)  
+  - 🔐 Access code: `Smv1` 
+
 ### ⚖️ Ethical Considerations and Privacy
 
 We are fully aware of the potential sensitivities surrounding harmful content. All videos included in the CH-SV dataset were publicly available on the internet at the time of collection. To mitigate privacy risks:
